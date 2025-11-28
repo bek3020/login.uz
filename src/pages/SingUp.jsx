@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../assets/img/logo.png";
 import Banner from "../assets/img/register.png";
-import { Form, Input, Button, Checkbox } from "antd";
+import { Form, Input, Button, Checkbox , message} from "antd";
 import {
   UserOutlined,
   LockOutlined,
@@ -11,7 +11,7 @@ import {
 
 const SingUp = () => {
   const onFinish = (values) => {
-    alert.success("Hisob muvaffaqiyatli yaratildi");
+    message.success("Hisob muvaffaqiyatli yaratildi");
     console.log(values);
   };
   return (

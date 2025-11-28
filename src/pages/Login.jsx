@@ -1,14 +1,14 @@
 import React from "react";
 import Logo from "../assets/img/logo.png";
 import Banner from "../assets/img/login.png";
-import { Form, Input, Button, Checkbox } from "antd";
+import { Form, Input, Button, Checkbox , message} from "antd";
 import { UserOutlined, LockOutlined, MailOutlined } from "@ant-design/icons";
 const Login = () => {
   const onFinish = (values) => {
     if (values.email === "behuz@gmail.com" && values.password === "123456") {
-      alert.sucess("Login muvaffaqiyatli");
+      message.sucess("Login muvaffaqiyatli");
     } else {
-      alert.error("Email yoki parol noto‘g‘ri");
+      message.error("Email yoki parol noto‘g‘ri");
     }
   };
   return (
